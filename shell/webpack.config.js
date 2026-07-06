@@ -47,8 +47,8 @@ module.exports = {
     new ModuleFederationPlugin({
       name: "shell",
       remotes: {
-        productList: "productList@http://localhost:8081/remoteEntry.js",
-        productDetails: "productDetails@http://localhost:8082/remoteEntry.js",
+        productList: "productList@https://vue-mfe-list.netlify.app/remoteEntry.js",
+        productDetails: "productDetails@https://vue-mfe-detail.netlify.app/remoteEntry.js",
       },
       shared: {
         vue: { singleton: true },
